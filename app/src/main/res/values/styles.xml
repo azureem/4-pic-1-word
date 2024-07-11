@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme for SplashActivity -->
+    <style name="Theme.SplashActivity" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#304D30</item>
+        <!-- Other theme attributes specific to SplashActivity -->
+    </style>
+
+    <!-- Theme for MenuActivity -->
+    <style name="Theme.MenuActivity" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#304D30</item>
+        <!-- Other theme attributes specific to MenuActivity -->
+    </style>
+
+    <style name="Theme.MainActivity" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#637E76</item>
+        <!-- Other theme attributes specific to MenuActivity -->
+    </style>
+
+    <style name="Style.App.circleImageView" parent="">
+        <item name="shapeAppearance">@style/ShapeAppearanceOverlay.App.circleImageView</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.circleImageView" parent="">
+        <item name="cornerSize">8dp</item>
+    </style>
+
+</resources>

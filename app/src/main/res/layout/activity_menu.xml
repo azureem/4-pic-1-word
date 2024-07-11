@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_pink"
+    tools:context=".presentation.menu.MenuActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rasm"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:id="@+id/question_container1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="5dp"
+                    android:src="@drawable/r1" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rasm">
+
+                <ImageView
+                    android:id="@+id/question_container2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="5dp"
+                    android:src="@drawable/r2" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rasm">
+
+                <ImageView
+                    android:id="@+id/question_container3"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="5dp"
+                    android:src="@drawable/r3" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rasm">
+
+                <ImageView
+                    android:id="@+id/question_container4"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="5dp"
+                    android:src="@drawable/r4" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="8dp"
+        android:src="@drawable/starrrrr"
+        app:layout_constraintBottom_toTopOf="@id/play_game_btn"
+        app:layout_constraintEnd_toEndOf="@+id/play_game_btn"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/play_game_btn"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/starrrrr"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/play_game_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/menu_bg"
+        android:fontFamily="@font/cherry"
+        android:text="        Play        "
+        android:textAllCaps="false"
+        android:textColor="@color/my_white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.267"
+        tools:ignore="MissingConstraints">
+
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/starrrrr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toEndOf="@+id/info_game_btn"
+        app:layout_constraintTop_toBottomOf="@+id/play_game_btn" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/starrrrr"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="@+id/info_game_btn"
+        app:layout_constraintTop_toBottomOf="@+id/play_game_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/info_game_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/menu_bg"
+        android:fontFamily="@font/cherry"
+        android:padding="8dp"
+        android:text="        Info        "
+        android:textAllCaps="false"
+        android:textColor="@color/my_white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/play_game_btn"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@id/play_game_btn"
+        app:layout_constraintTop_toBottomOf="@+id/play_game_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/ques_anim"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:elevation="100dp"-->
+<!--        android:layout_marginEnd="6dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/constrdialog"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/constrdialog"-->
+<!--        app:layout_constraintTop_toTopOf="@id/constrdialog"-->
+<!--        app:lottie_fileName="qqq.json"-->
+<!--        app:lottie_url="REPLACE_JSON_URL" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrdialog"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:background="@drawable/bg_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/letters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/aaeebbee"
+            android:text="No enough coins! Keep playing and earn coins to unlock more hints!."
+            android:textColor="@color/my_black"
+            android:layout_marginHorizontal="18dp"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/oops"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/oops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cherry"
+            android:text="OOPS!"
+            android:textColor="#F38FE3"
+            android:textSize="38sp"
+            app:layout_constraintBottom_toTopOf="@id/letters"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/no_hint"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="50dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@drawable/yes_btn"-->
+<!--            android:fontFamily="@font/cherry"-->
+<!--            android:text="No"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="28sp"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/simple"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/yes_hint"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/letters"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/letters"-->
+<!--            app:layout_constraintVertical_bias="1.0" />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ok_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/no_btn"
+            android:fontFamily="@font/cherry"
+            android:text="Ok"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toTopOf="@id/simple"
+            app:layout_constraintEnd_toEndOf="@+id/letters"
+            app:layout_constraintTop_toBottomOf="@id/letters"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <View
+            android:id="@+id/simple"
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

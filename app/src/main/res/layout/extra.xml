@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background= "@color/my_blue"
+    tools:context=".presentation.main_screen.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/my_blue">
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/cherry"
+                android:text="Level: "
+                android:textColor="@color/my_black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@id/level_img"
+                app:layout_constraintStart_toEndOf="@id/level_img"
+                app:layout_constraintTop_toTopOf="@id/level_img"
+                app:layout_constraintVertical_bias="0.0">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/level_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/level_figma"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/level"
+                app:layout_constraintHorizontal_bias="0.209"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/level_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cherry"
+                android:text=""
+                android:layout_marginStart="15dp"
+                android:textColor="@color/my_black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/level"
+                app:layout_constraintHorizontal_bias="0.089"
+                app:layout_constraintStart_toEndOf="@id/level"
+                app:layout_constraintTop_toTopOf="@id/level"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/coin_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cherry"
+                android:text="0"
+                android:textColor="@color/my_black"
+                android:textSize="24sp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toTopOf="@id/coin_img"
+                app:layout_constraintBottom_toBottomOf="@id/coin_img"
+                app:layout_constraintEnd_toStartOf="@+id/coin_img"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <ImageView
+                android:id="@+id/coin_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/coin_figma"
+                app:layout_constraintBaseline_toBottomOf="@id/level"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/level"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+               android:layout_marginHorizontal="48dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+
+                    android:layout_weight="1">
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/question_container1"
+                        style="@style/Style.App.circleImageView"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mouse4" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/question_container2"
+                        style="@style/Style.App.circleImageView"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mouse4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/question_container3"
+                        style="@style/Style.App.circleImageView"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mouse4" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/question_container4"
+                        style="@style/Style.App.circleImageView"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mouse4" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9">
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/hint"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginVertical="3dp"
+                    android:src="@drawable/help_frame"
+                    android:layout_marginStart="48dp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/delete_all"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/deletion"
+                    android:layout_gravity="end"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginEnd="48dp"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ansewerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textSize="24dp"
+                android:textColor="@color/my_black"
+                android:layout_marginHorizontal="2dp"
+                android:fontFamily="@font/cherry"
+                android:background="@drawable/answer_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textSize="24dp"
+                android:textColor="@color/my_black"
+                android:layout_marginHorizontal="2dp"
+                android:fontFamily="@font/cherry"
+                android:background="@drawable/answer_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textSize="24dp"
+                android:textColor="@color/my_black"
+                android:layout_marginHorizontal="2dp"
+                android:fontFamily="@font/cherry"
+                android:background="@drawable/answer_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textSize="24dp"
+                android:textColor="@color/my_black"
+                android:layout_marginHorizontal="2dp"
+                android:fontFamily="@font/cherry"
+                android:background="@drawable/answer_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textColor="@color/my_black"
+                android:textSize="24dp"
+                android:fontFamily="@font/cherry"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/answer_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textSize="24dp"
+                android:textColor="@color/my_black"
+                android:fontFamily="@font/cherry"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/answer_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textSize="24dp"
+                android:textColor="@color/my_black"
+                android:layout_marginHorizontal="2dp"
+                android:fontFamily="@font/cherry"
+                android:background="@drawable/answer_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textSize="24dp"
+                android:textColor="@color/my_black"
+                android:layout_marginHorizontal="2dp"
+                android:fontFamily="@font/cherry"
+                android:background="@drawable/answer_bg"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/variantContainer1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/cherry"
+                android:textSize="24dp"
+                android:textColor="@color/my_black"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/variant_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="24dp"
+                android:textColor="@color/my_black"
+                android:fontFamily="@font/cherry"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/variant_bg"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/cherry"
+                android:textSize="24dp"
+                android:textColor="@color/my_black"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/variant_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/cherry"
+                android:textColor="@color/my_black"
+                android:layout_marginHorizontal="2dp"
+                android:textSize="24dp"
+                android:background="@drawable/variant_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textColor="@color/my_black"
+                android:fontFamily="@font/cherry"
+                android:textSize="24dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/variant_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textColor="@color/my_black"
+                android:fontFamily="@font/cherry"
+                android:textSize="24dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/variant_bg"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/variantContainer2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/my_black"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:layout_weight="1.3">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:textColor="@color/my_black"
+                android:fontFamily="@font/cherry"
+                android:layout_marginHorizontal="2dp"
+                android:textSize="24dp"
+                android:background="@drawable/variant_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:textColor="@color/my_black"
+                android:fontFamily="@font/cherry"
+                android:textSize="24dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/variant_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:textColor="@color/my_black"
+                android:fontFamily="@font/cherry"
+                android:layout_marginHorizontal="2dp"
+                android:textSize="24dp"
+                android:background="@drawable/variant_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:textColor="@color/my_black"
+                android:fontFamily="@font/cherry"
+                android:layout_marginHorizontal="2dp"
+                android:textSize="24dp"
+                android:background="@drawable/variant_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:textColor="@color/my_black"
+                android:fontFamily="@font/cherry"
+                android:layout_marginHorizontal="2dp"
+                android:textSize="24dp"
+                android:background="@drawable/variant_bg"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:textColor="@color/my_black"
+                android:fontFamily="@font/cherry"
+                android:textSize="24dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/variant_bg"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9">
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
